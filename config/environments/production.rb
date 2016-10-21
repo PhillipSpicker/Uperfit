@@ -23,7 +23,9 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  #turned config.assets.compile to true to get pics on heroku working
+  config.assets.compile = true
+
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
