@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   get 'static/about'
 
   get 'static/contact'
+  
+  resources :products
+
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 # The priority is based upon order of creation: first created -> highest priority.
