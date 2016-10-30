@@ -53,3 +53,4 @@ group :production do
   gem 'pg'
 end
 
+gem ruby '2.3.1'
