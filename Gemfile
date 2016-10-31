@@ -12,7 +12,7 @@ group :development, :test do
   gem 'sqlite3'
 end
 #Try to fix production environment on heroku
-group: :production do
+group :production do
   gem 'rails_12factor'
 end
 # Use Puma as the app server
