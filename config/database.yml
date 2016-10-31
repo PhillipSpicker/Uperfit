@@ -20,6 +20,16 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+#comment out original production part and add details to connect to heroku below.
+#production:
+  #<<: *default
+  #database: db/production.sqlite3
+
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  database: d3pqta4k3or3v7
+  username: username
+  password: <%= ENV['Uperfit_DATABASE_PASSWORD'] %>
