@@ -26,9 +26,4 @@ test:
   #database: db/production.sqlite3
 
 production:
-  adapter: postgresql
-  pool: 5
-  timeout: 5000
-  database: d3pqta4k3or3v7
-  username: wybqjozadvcrrb
-  password: <%= ENV['Uperfit_DATABASE_PASSWORD'] %>
+ url: <%= ENV['DATABASE_URL'] %>
